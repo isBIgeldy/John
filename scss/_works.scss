@@ -1,0 +1,121 @@
+//===========================================================================================================
+.works {
+   // .works__container
+   &__container {
+   }
+   // .works__title
+   &__title {
+      font-weight: 700;
+      font-size: 44px;
+      margin: 0 0 55px 0;
+      transition: color .3s ease .0s;
+      @media (min-width: $md2+px) {
+         &:hover{
+            color: #ff6464;   
+         }
+      }
+      @media (max-width: $md3+px) {
+         font-size: 30px;
+         margin: 0 0 25px 0;
+      }
+   }
+   // .works__item
+   &__item {
+   }
+   // .works__work
+   &__work {
+   }
+}
+
+//===========================================================================================================
+.work {
+   padding: 0 0 30px 0;
+   margin: 0 0 30px 0;
+   border-bottom: 1px solid #E0E0E0; 
+   &:last-child {
+      margin: 0;
+   }
+   // .work__item 
+   &__item {
+      @media (min-width: $md3+px) {
+         display: flex;
+         align-items: flex-start;
+      }
+   }
+   // .work__img
+   &__img {
+      flex: 0 0 246px;
+      display: block;
+      border-radius: 6px;
+      min-height: 180px;
+      overflow: hidden;
+      @media (max-width: $md3+px) {
+         margin: 0 0 17px 0;
+         padding: 0 0 50% 0;
+      }
+   }
+   // .work__body
+   &__body {
+      flex: 1 1 auto;
+      padding: 0 0 0 18px;
+   }
+   // .work__title
+   &__title {
+      display: block;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 44 / 30 * 100%;
+      padding: 0 0 11px 0;
+      color: inherit;
+      transition: color .3s ease .0s;
+      @media (min-width: $md2+px) {
+         &:hover{
+            color: #ff6464;   
+         }
+      }
+      @media (max-width: $md3+px) {
+         font-size: 24px;  
+         line-height: 30 / 24 * 100%;
+      }
+   }
+   // .work__info
+   &__info {
+      display: flex;
+      align-items: center;
+      padding: 0 0 16px 0;
+   }
+   // .work__year
+   &__year {
+      display: inline-flex;
+      height: 25px;
+      padding: 0 10px;
+      margin: 0 28px 0 0;
+      font-size: 18px;
+      font-weight: 900;
+      background: #142850;
+      color: #fff;
+      border-radius: 16px;
+      justify-content: center;
+      align-items: center;
+   }
+   // .work__category
+   &__category {
+      font-size: 20px;
+      color: #8695A4;
+   }
+   // .work__text
+   &__text {
+      
+   }
+}
+.none {
+   @media (max-width: $md3+px) {
+      &:first-child {
+         display: block;
+      }
+      display: none;
+   }
+}
+//===========================================================================================================
+
+
